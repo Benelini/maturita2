@@ -1,0 +1,46 @@
+<%- include('komponenty/zahlavi.ejs')%>
+<span style="position:absolute;z-index:14; left:32px;top:307px;width:1300px;height:225px">
+
+          <div class="container">
+            <div class="row">
+              <% if (message) { %>
+                <div class="alert alert-dismissible fade show" role="alert">
+                  <a href="" class="text-success"><i class="fas fa-edit fa-lg mx-1"></i><strong>Film byl přidán!</strong>
+                </div>
+              <% } %>
+                <div class="table-responsive">
+                  <% if (zaznam != '') { %>
+                    <table class="table table-striped text-center" style="width:1228px">
+                      <thead>
+                        <tr class="table-light">   
+                          <th width="7%">Smazat</th>
+                          <th width="7%">ID</th>
+                          <th width="20%">Název filmu</th>
+                          <th width="20%">Jméno režiséra</th>
+                          <th width="7%">Rok vydání</th>
+                          <th width="39%">Popis filmu</th>
+                        </tr>   
+                      </thead>    
+                      <tbody>
+                        <% zaznam.forEach((row,index) => { %>
+                          <tr>
+                            <td>
+                              <a href="/delete/<%= row._id %>" class="text-danger"><button type='button' class='btn btn-default'><span class='glyphicon glyphicon-remove'>X</span></button></a>
+                            </td>
+                            <td><%= index %></td>
+                            <td><%= row.nazev_filmu %></td#>
+                            <td><%= row.reziser %></td>
+                            <td><%= row.rok_vydani %></td>
+                            <td><%= row.popis %></td>
+                          </tr>
+                        <% }) %>  
+                      </tbody>           
+                    </table>  
+                  <% } else { %>   
+                    <h1 class="text-center text-secondary mt-5">Nenašli jsme žádné filmy.</h1>  
+                  <% } %>         
+                </div>                   
+          </div>
+</span>
+
+<%- include('komponenty/zapati.ejs')%>

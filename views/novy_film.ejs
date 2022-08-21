@@ -1,0 +1,29 @@
+<%- include('komponenty/zahlavi.ejs')%>
+<span style="position:absolute;z-index:14;      left:66px;top:307px;width:579px;height:225px">
+  <table cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="579" height="225" style="vertical-align:top">
+          <div class="shape" v:shape="_x0000_s1044" style="padding:2.88pt 2.88pt 2.88pt 2.88pt">
+            <p>Nový film</p>
+            <p>______________________________________________________________________________________</p>  
+            <form action="/novyfilm" method="post" id="novy_film_formular">
+              <div class="mb-3">
+                <label for="nazev_filmu">Název filmu:</label>
+                <input type="text" id="nazev_filmu" name="nazev_filmu" size="55"><br><br>
+                <label for="reziser">Jméno režiséra:</label>
+                <input type="text" id="reziser" name="reziser" size="53"><br><br>
+                <label for="rok_vydani">Rok vydání:</label>
+                <input type="text" id="rok_vydani" name="rok_vydani" size="56"><br><br>
+                <label for="popis">Krátký popis filmu:</label>
+                <input type="text" id="popis" name="popis" size="49"><br><br>
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+<%- include('komponenty/zapati.ejs')%>
