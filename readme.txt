@@ -15,6 +15,7 @@ npm i -D nodemon        (proces pro detekci změn ve zdroji a automatický resta
 
 //GIT
 
+$ heroku git:remote -a dbfilmu
  git commit -am "make it better"
  git push heroku master
  heroku logs -n 200
