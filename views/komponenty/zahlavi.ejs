@@ -1,54 +1,34 @@
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <link rel="shortcut icon" href="#">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css"/>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div style="position:absolute;width:13.0875in;height:6.0922in"><span style="position:absolute;z-index:2;left:41px;top:9px;width:182px;height:117px"><a href="/"><img border="0" width="182" height="117" src="/obrazek.png" v:shapes="_x0000_s1028"/></a></span><span style="position:absolute;z-index:3;      left:234px;top:79px;width:528px;height:51px">
-      <table cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td width="528" height="51" style="vertical-align:top">
-              <div class="shape" v:shape="_x0000_s1029" style="padding:2.88pt 2.88pt 2.88pt 2.88pt">
-                <p><span lang="en-US" style="font-size:26.0pt;line-height:119%; font-family:Calibri;font-weight:bold;">Databáze filmů</span></p>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table></span>
-      <table v:shapes="_x0000_s1026" cellpadding="0" cellspacing="0" width="1228" height="54" border="0" dir="ltr" style="width:920.92pt;height:40.38pt;border-collapse:      collapse;position:absolute;top:109.97pt;left:32.39pt;z-index:1">
-        <tbody>
-          <tr>
-            <td width="410" height="25" valign="Top" bgcolor="white" style="width:307.3533pt;            height:18.9669pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;            padding-bottom:2.88pt;background:white;border-top:solid black 1.0pt">
-              <p><span>&nbsp;</span></p>
-            </td>  
-            <td width="409" height="25" valign="Top" bgcolor="white" style="width:306.7825pt;            height:18.9669pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;            padding-bottom:2.88pt;background:white;border-top:solid black 1.0pt">
-              <p><span>&nbsp;</span></p>
-            </td>  
-            <td width="409" height="25" valign="Top" bgcolor="white" style="width:306.7826pt;            height:18.9669pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;            padding-bottom:2.88pt;background:white;border-top:solid black 1.0pt; text-align: right;">
-              <p><span>
-                <a href="/novyfilm">
-                  <span>/Vložit film/<br>
-              </span></a></span></p>
-            </td>
-          </tr> 
-          <tr>
-            <td width="410" height="28" valign="Top" bgcolor="white" style="width:307.3533pt;            height:21.4083pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;            padding-bottom:2.88pt;background:white;border-bottom:solid black 1.0pt">
-              <p><a href="/onas"><span>O naší databázi</span></a></p>
-            </td>  
-            <td width="409" height="28" valign="Top" bgcolor="white" style="width:306.7825pt;            height:21.4083pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;            padding-bottom:2.88pt;background:white;border-bottom:solid black 1.0pt">
-              <p><a href="/seznam"><span>Seznam filmů</span></a></p>
-            </td>  
-            <td width="409" height="28" valign="Top" bgcolor="white" style="width:306.7826pt;            height:21.4083pt;padding-left:2.88pt;padding-right:2.88pt;padding-top:2.88pt;            padding-bottom:2.88pt;background:white;border-bottom:solid black 1.0pt">
-              <p><a href="/kontakt"><span>Kontakt</span></a></p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-</body>
+<!DOCTYPE html>
+<html lang="cs-cz">
+  <head lang="cs-cz">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.12.1/datatables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style> 
+      table {border-collapse: collapse; width: 100%;}
+      tr {border-bottom: 1pt solid black; min-width: 110px;}
+      th {height: 70px; min-width: 110px;}
+    </style>
+  </head>
+  <body>
+      <table>
+      <tbody>
+        <tr>
+          <th>&nbsp;&nbsp;<img src="/obrazek.png" alt="DBF Logo" height="117" width="182"></th>
+          <th></th>
+          <th></th>
+          <th><p><span> <a href="/novyfilm">/Vložit nový film/<br></a></span></p></th>
+        </tr>
+        <tr>
+          <td><h1>&nbsp;&nbsp;&nbsp;Databáze filmů</h1></td>
+          <td><p><a href="/onas"><span>O naší databázi</span></a></p></td>
+          <td><p><a href="/seznam"><span>Seznam filmů</span></a></p></td>
+          <td><p><a href="/kontakt"><span>Kontakt</span></a></p></td>
+        </tr>
+      </tbody>
+    </table>
