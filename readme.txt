@@ -1,4 +1,4 @@
-// Instatace
+// Instalace
 
 node -v                 (funguje s verzi v16.15.0)
 npm init                (nainstaluje package.json)
